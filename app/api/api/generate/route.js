@@ -1,9 +1,10 @@
 import OpenAI from "openai";
 import { getServerSession } from "next-auth";
-import { connectDB } from "@/lib/db";
-import User from "@/models/User";
-import Request from "@/models/Request";
-import { analyzeJD } from "@/lib/analyze";
+import { connectDB } from "../../../../lib/db";
+import User from "../../../../models/User";
+import Request from "../../../../models/Request";
+import { analyzeJD } from "../../../../lib/analyze";
+
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
